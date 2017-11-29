@@ -1,0 +1,613 @@
+@charset "UTF-8";
+
+/*adjust*/
+
+* {
+    box-sizing: border-box;
+}
+
+*:hover {
+    transition: background linear .1s, opacity linear .1s, color linear .1s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    color: #333;
+    font-size: 15px;
+    line-height: 2;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #3583aa;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #788d98;
+}
+
+a:hover {
+    //text-decoration: underline;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*any*/
+
+section {
+    margin-bottom: 35px;
+}
+
+header {
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    margin-top: 50px;
+}
+
+.global-nav {
+    float: right;
+    margin-top: 60px;
+}
+
+.global-nav li {
+    float: left;
+    margin: 0 20px;
+    font-size: 20px;
+    list-style-type: none;
+    font-family: 'Atomic Age', cursive;
+}
+
+.global-nav li a {
+    color: #fff;
+}
+
+.global-nav li a:before {
+    content: "";
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    display: block;
+    position: relative;
+    top: 40px;
+}
+
+.global-nav li a:hover:before {
+    width: 100%;
+    transition: all .3s;
+}
+
+#wrap {
+    clear: both;
+    background-color: #fff;
+    margin-top: 220px;
+    padding: 35px 0;
+}
+
+#index #wrap {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+    background-color: #767671;
+}
+
+footer small {
+    font-size: 12px;
+}
+
+
+/*index*/
+
+#index {
+    background-image: url(../images/bg-index.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#index h1 {
+    font-size: 100px;
+    line-height: 1;
+    color: #fff;
+    font-family: 'Atomic Age', cursive;
+    margin-bottom: 25px;
+    border: none;
+}
+
+#index p {
+    font-size: 16px;
+    color: #fff;
+}
+
+#index .content {
+    height: 220px;
+    width: 80vw;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.btn a {
+    background-color: #009cd3;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Atomic Age', cursive;
+    display: block;
+    width: 185px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px solid #009cd3;
+}
+
+.btn a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    color: #009cd3;
+}
+
+#index footer {
+    width: 100%;
+    margin: 150px auto 0 auto;
+    text-align: left;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+
+/*about*/
+
+#about {
+    background-image: url(../images/bg-about.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+.main-center {
+    width: 940px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Atomic Age', cursive;
+    font-size: 36px;
+    border-bottom: 1px solid #ccc;
+}
+
+h2 {
+    font-family: 'Atomic Age', cursive;
+    font-size: 24px;
+}
+
+.icon:before {
+    content: "";
+    padding-left: 10px;
+    border-left: 7px solid #9cb4a4
+}
+
+#about .profile-txt {
+    width: 540px;
+    float: left;
+}
+
+#about .profile-txt span {
+    font-weight: bold;
+}
+
+#about .profile-image {
+    float: right;
+}
+
+#about .career th {
+    width: 240px;
+    background-color: #f0f0f0;
+    padding: 12px 0;
+    border: 1px solid #ccc;
+}
+
+#about .career td {
+    width: 660px;
+    padding: 12px 0 12px 40px;
+    border: 1px solid #ccc;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+/*portfolio*/
+
+#portfolio {
+    background-image: url(../images/bg-portfolio.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+.main {
+    width: 700px;
+    margin: 0 10px;
+    float: left;
+}
+
+.sidebar {
+    width: 200px;
+    margin: 0 10px 0 30px;
+    float: right;
+    font-family: 'Atomic Age', cursive;
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.sidebar ul a {
+    color: #333;
+}
+
+a img:hover {
+    opacity: 0.8;
+}
+
+
+/*photograph*/
+
+#photograph {
+    background-image: url(../images/bg-photograph.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+#photograph .photograph-list li {
+    float: left;
+    list-style-type: none;
+    margin: 0 20px 15px 0;
+}
+
+#photograph .photograph-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/*video*/
+
+#video {
+    background-image: url(../images/bg-video.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+
+/*contact*/
+
+#contact {
+    background-image: url(../images/bg-contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+#contact .access table {
+    float: left;
+}
+
+#contact .access th,
+#contact .access td {
+    text-align: left;
+    vertical-align: top;
+    line-height: 2.5;
+}
+
+#contact .access td {
+    padding-left: 30px;
+}
+
+#contact .access iframe {
+    width: 440px;
+    float: right;
+}
+
+#contact .form {
+    background-color: #eaeaea;
+    padding: 30px 50px;
+}
+
+#contact .form dl dt {
+    width: 165px;
+    float: left;
+    clear: both;
+}
+
+#contact .form dl dd {
+    padding: 10px 0;
+}
+
+#contact .form dl dt {
+    padding: 11px 0;
+}
+
+#contact .form .name {
+    width: 240px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+#contact .form .email {
+    width: 260px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+#contact .form .tel {
+    width: 240px;
+    height: 30px;
+    padding: 0 5px;
+}
+
+#contact .form .type {
+    width: 180px;
+    height: 30px;
+}
+
+#contact .form label {
+    margin-right: 10px;
+}
+
+#contact .form .message {
+    width: 660px;
+    height: 150px;
+    resize: none;
+    padding: 5px 5px;
+}
+
+#contact .form button {
+    background-color: #009cd3;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Atomic Age', cursive;
+    display: block;
+    width: 120px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px solid #009cd3;
+    margin-left: 165px;
+}
+
+#contact .form button:hover {
+    background-color: #fff;
+    color: #009cd3;
+    cursor: pointer;
+}
+
+#contact .form .required:after {
+    content: "*";
+    color: #f00;
+}
+
+#contact .form .attention {
+    margin: 30px 0 0 165px;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        font-size: 3.5vw;
+    }
+    h1 {
+        font-size: 6.2vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+    header {
+        width: auto;
+        margin: 0 5%;
+    }
+    footer {
+        width: 100vw !important;
+    }
+    #index footer {
+        margin-top: 50px !important;
+        text-align: left;
+    }
+    footer small {
+        margin-left: 30px;
+    }
+    .logo {
+        float: none;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .global-nav {
+        float: none;
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .global-nav li {
+        display: inline;
+        margin: 0 8px;
+        float: none;
+        margin-top: 0 4px;
+    }
+    #wrap {
+        margin-top: 40px;
+        padding: 35px 0 0;
+    }
+    .content {
+        width: 100%;
+    }
+    .main {
+        float: none;
+        margin: 0 5%;
+        width: auto;
+    }
+    h2 img {
+        max-width: 100%;
+    }
+    #portfolio,
+    #about,
+    #video,
+    #photograph,
+    #contact {
+        background-image: url(../images/bg-portfolio-sp.jpg);
+    }
+    .sidebar {
+        width: auto;
+        margin: 0;
+        float: none;
+        padding: 30px 10% 10px;
+        background-color: #f7f6f4;
+    }
+    body:not(#photograph) * {
+        float: none !important;
+    }
+    #index .content {
+        padding: 0 20px;
+    }
+    #index h1 {
+        font-size: 50px;
+        line-height: 4.5rem;
+    }
+    #photograph .photograph-list img {
+        width: 150px;
+    }
+    #photograph .photograph-list li {
+        margin: 4px 4px !important;
+    }
+    #video iframe {
+        width: 100%;
+        height: 200px;
+    }
+    #contact .main-center {
+        width: 100%;
+    }
+    #contact .access iframe {
+        width: 100%;
+    }
+    #contact .form {
+        padding: 0 10px;
+    }
+    #contact .form select {
+        background: #fff;
+    }
+    #contact .form textarea.message {
+        width: 100%;
+    }
+    #contact .form dd,
+    #contact .form dt {
+        margin: 0;
+        padding: 0 !important;
+    }
+    #contact .form dd {
+        padding: 0 0 10px !important;
+    }
+    #contact .btn,
+    #contact .attention {
+        margin: 0 !important;
+    }
+    #contact .btn {
+        margin: 0 auto;
+    }
+    .content {
+        width: auto !important;
+        padding-bottom: 1px;
+    }
+    .main {
+        padding-bottom: 1px !important;
+    }
+    #contact .attention p {
+        font-size: 0.7rem;
+        margin: 10px 0;
+    }
+    #about .content {
+        margin: 0 5%;
+    }
+    #about table {
+        width: auto;
+    }
+    #about .profile-txt {
+        width: auto !important;
+    }
+    #about .profile-image {
+        float: none;
+        width: 100%;
+    }
+    #about table th,
+    #about table td {
+        font-size: 0.5rem;
+    }
+    #about table td {
+        padding: 0 5px !important;
+    }
+    .global-nav li a:before {
+        all: unset;
+    }
+    .global-nav li a:hover:before {
+        all: unset;
+    }
+}
