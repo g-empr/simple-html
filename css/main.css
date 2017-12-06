@@ -467,6 +467,9 @@ a img:hover {
         width: auto;
         margin: 0 5%;
     }
+    header .logo {
+        display: none;
+    }
     footer {
         width: 100vw !important;
     }
