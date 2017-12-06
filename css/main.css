@@ -467,8 +467,11 @@ a img:hover {
         width: auto;
         margin: 0 5%;
     }
+    header .global-nav {
+        margin-top: 20px;
+    }
     header .logo {
-        display: none;
+        margin-top: 12px;
     }
     footer {
         width: 100vw !important;
@@ -533,6 +536,7 @@ a img:hover {
         padding: 0 20px;
     }
     #index h1 {
+        margin-bottom: 12px;
         font-size: 50px;
         line-height: 3rem;
     }
